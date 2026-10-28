@@ -11,10 +11,19 @@ const database = {
     { id: 3, name: "Maersk Alabama", dockId: 3 },
     { id: 4, name: "Nashville Hauler", dockId: 4 },
   ],
+  shippingShips: [
+    { id: 1, name: "Sea Breeze", haulerId: 1 },
+    { id: 2, name: "Sunset S", haulerId: 2 },
+    { id: 3, name: "Paradise", haulerId: 3 },
+    { id: 4, name: "Nashville Shipper", haulerId: 4 },
+  ],
 };
 export const getDocks = () => {
   return structuredClone(database.docks);
 };
 export const getHaulingShips = () => {
   return structuredClone(database.haulers);
+};
+export const getShippingShips = () => {
+  return structuredClone(database.shippingShips);
 };
