@@ -5,7 +5,16 @@ const database = {
     { id: 3, location: "Rotterdam, The Netherlands", volume: "14.35" },
     { id: 4, location: "Antwerp, Belgium", volume: "12.04" },
   ],
+  haulers: [
+    { id: 1, name: "Ever Given", dockId: 1 },
+    { id: 2, name: "MSC Gülsün", dockId: 2 },
+    { id: 3, name: "Maersk Alabama", dockId: 3 },
+    { id: 4, name: "Nashville Hauler", dockId: 4 },
+  ],
 };
 export const getDocks = () => {
   return structuredClone(database.docks);
+};
+export const getHaulingShips = () => {
+  return structuredClone(database.haulers);
 };

@@ -1,4 +1,5 @@
 import { DockList } from "./DockList.js";
+import { HaulerList } from "./Haulers.js";
 const mainContainer = document.querySelector("#container");
 const applicationHTML = `
 <h1>Shipping ships</h1>
@@ -7,6 +8,10 @@ const applicationHTML = `
         <h2>Docks with Service</h2>
         ${DockList()}
   </section>
+   <section class="detail--column list details__HaulerList">
+        <h2>Haulers with Service</h2>
+        ${HaulerList()}
+    </section>
 </article>
 `;
 
