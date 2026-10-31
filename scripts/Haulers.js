@@ -2,6 +2,7 @@ import { getHaulingShips, getShippingShips } from "./database.js";
 
 export const HaulerList = () => {
   const haulers = getHaulingShips();
+  haulers.sort((a, b) => a.name.localeCompare(b.name));
 
   let haulersHTML = "<ul>";
 
